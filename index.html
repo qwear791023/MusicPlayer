@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BIGIN</title>
+
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="all.css">
+    <link rel="stylesheet" href="CSSinit.css">
+</head>
+
+<body>
+    <div class="header">
+        <nav class="navbar navbar-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"> <img class="head_logo" src="images/01_head_logo.svg"> </a>
+                <div class="btn-group me-2" role="group" aria-label="First group">
+                    <button type="button" class="btn secondary me-2" data-bs-toggle="modal" data-bs-target="#login">管理者登入</button>
+                    <button type="button" class="btn narrow"></button>
+                    <button type="button" class="btn enlarge"></button>
+                    <button type="button" class="btn close"></button>
+                </div>
+                <!-- <ul class="d-flex">
+                    <li><a href="#">管理者登入</a></li>
+                    <li>
+                        <button class="narrow"></button>
+                    </li>
+                    <li>
+                        <button class="enlarge"></button>
+                    </li>
+                    <li>
+                        <button class="close"></button>
+                    </li>
+                </ul> -->
+            </div>
+        </nav>
+    </div>
+    <div class="article d-flex">
+        <div class="left_bar h-100 bg-light bg-gradient">
+            <div class="list-group overflow-y-auto" id="list-tab" role="tablist">
+                <p class="p-2 bg-orange text-white mb-3">預設播放清單</p>
+
+                <a class="list-group-item list-group-item-action active" id="list-jazz-list" data-bs-toggle="list" href="#list-jazz" role="tab" aria-controls="list-jazz"><img src="images/02_leftbar__icon_default.svg"> 爵士</a>
+
+                <a class="list-group-item list-group-item-action" id="list-blues-list" data-bs-toggle="list" href="#list-blues" role="tab" aria-controls="list-blues"><img src="images/02_leftbar__icon_default.svg"> 藍調</a>
+
+                <a class="list-group-item list-group-item-action" id="list-rock-list" data-bs-toggle="list" href="#list-rock" role="tab" aria-controls="list-rock"><img src="images/02_leftbar__icon_default.svg"> 搖滾</a>
+
+
+                <p class="p-2 bg-orange text-white mt-5 mb-3">自定義播放清單</p>
+
+                <a class="list-group-item list-group-item-action" id="list-music1-list" data-bs-toggle="list" href="#list-music1" role="tab" aria-controls="list-music1"><img src="images/02_leftbar_icon_custom.svg"> 自訂義1</a>
+
+                <a class="list-group-item list-group-item-action" id="list-music2-list" data-bs-toggle="list" href="#list-music2" role="tab" aria-controls="list-music2"><img src="images/02_leftbar_icon_custom.svg"> 自訂義2</a>
+
+                <a class="list-group-item list-group-item-action" id="list-music3-list" data-bs-toggle="list" href="#list-music3" role="tab" aria-controls="list-music3"><img src="images/02_leftbar_icon_custom.svg"> 自訂義3</a>
+            </div>
+        </div>
+
+        <div class="list">
+            <div class="d-flex justify-content-between bg-grey py-2 px-5 text-white">
+                <p>曲目</p>
+                <p>時間</p>
+            </div>
+            <div class="tab-content px-5 py-2 overflow-y-auto" id="nav-tabContent">
+                <div class="tab-pane fade show active" id="list-jazz" role="tabpanel" aria-labelledby="list-jazz-list">
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>001 - Jazz</p>
+                        <p>1:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>002 - Jazz</p>
+                        <p>2:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>003 - Jazz</p>
+                        <p>3:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>004 - Jazz</p>
+                        <p>4:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>005 - Jazz</p>
+                        <p>5:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>006 - Jazz</p>
+                        <p>6:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>007 - Jazz</p>
+                        <p>7:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>008 - Jazz</p>
+                        <p>1:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>009 - Jazz</p>
+                        <p>2:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>010 - Jazz</p>
+                        <p>3:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>011 - Jazz</p>
+                        <p>4:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>012 - Jazz</p>
+                        <p>5:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>013 - Jazz</p>
+                        <p>6:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>014 - Jazz</p>
+                        <p>7:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>015 - Jazz</p>
+                        <p>2:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>016 - Jazz</p>
+                        <p>3:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>017 - Jazz</p>
+                        <p>4:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>018 - Jazz</p>
+                        <p>5:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>019 - Jazz</p>
+                        <p>6:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>020 - Jazz</p>
+                        <p>7:23</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="list-blues" role="tabpanel" aria-labelledby="list-blues-list">
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>001 - Blues</p>
+                        <p>1:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>002 - Blues</p>
+                        <p>2:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>003 - Blues</p>
+                        <p>3:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>004 - Blues</p>
+                        <p>4:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>005 - Blues</p>
+                        <p>5:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>006 - Blues</p>
+                        <p>6:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>007 - Blues</p>
+                        <p>7:23</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="list-rock" role="tabpanel" aria-labelledby="list-rock-list">
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>001 - Rock</p>
+                        <p>1:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>002 - Rock</p>
+                        <p>2:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>003 - Rock</p>
+                        <p>3:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>004 - Rock</p>
+                        <p>4:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>005 - Rock</p>
+                        <p>5:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>006 - Rock</p>
+                        <p>6:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>007 - Rock</p>
+                        <p>7:23</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="list-music1" role="tabpanel" aria-labelledby="list-music1-list">
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>001 - Music1</p>
+                        <p>1:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>002 - Music1</p>
+                        <p>2:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>003 - Music1</p>
+                        <p>3:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>004 - Music1</p>
+                        <p>4:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>005 - Music1</p>
+                        <p>5:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>006 - Music1</p>
+                        <p>6:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>007 - Music1</p>
+                        <p>7:23</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="list-music2" role="tabpanel" aria-labelledby="list-music2-list">
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>001 - Music2</p>
+                        <p>1:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>002 - Music2</p>
+                        <p>2:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>003 - Music2</p>
+                        <p>3:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>004 - Music2</p>
+                        <p>4:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>005 - Music2</p>
+                        <p>5:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>006 - Music2</p>
+                        <p>6:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>007 - Music2</p>
+                        <p>7:23</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="list-music3" role="tabpanel" aria-labelledby="list-music3-list">
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>001 - Music3</p>
+                        <p>1:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>002 - Music3</p>
+                        <p>2:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>003 - Music3</p>
+                        <p>3:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>004 - Music3</p>
+                        <p>4:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>005 - Music3</p>
+                        <p>5:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>006 - Music3</p>
+                        <p>6:23</p>
+                    </div>
+                    <div class="d-flex justify-content-between my-3 p-1 hover-bg-secondary">
+                        <p>007 - Music3</p>
+                        <p>7:23</p>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="list-add" role="tabpanel" aria-labelledby="list-add-list">
+                    <div class="list-group">
+                        <label class="list-group-item my-3 p-1">
+                          <input class="form-check-input me-1" type="checkbox" value="">
+                          Music01
+                        </label>
+                        <label class="list-group-item my-3 p-1">
+                            <input class="form-check-input me-1" type="checkbox" value="">
+                            Music02
+                        </label>
+                        <label class="list-group-item my-3 p-1">
+                            <input class="form-check-input me-1" type="checkbox" value="">
+                            Music03
+                        </label>
+                        <label class="list-group-item my-3 p-1">
+                            <input class="form-check-input me-1" type="checkbox" value="">
+                            Music04
+                        </label>
+                        <label class="list-group-item my-3 p-1">
+                            <input class="form-check-input me-1" type="checkbox" value="">
+                            Music05
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div class="function d-flex justify-content-around align-items-center border-top">
+                <!-- <a type="button" class="btn fw-bolder" id="list-add-list" data-bs-toggle="list" href="#list-add" role="tab" aria-controls="list-add"><img src="images/04_function_add.svg"> 加入歌曲</a> -->
+                <div class="list-group" id="list-tab2" role="tablist">
+                    <a type="button" class="btn fw-bolder list-group-item list-group-item-action" id="list-add-list" data-bs-toggle="list" href="#list-add" role="tab" aria-controls="list-add"><img src="images/04_function_add.svg"> 加入歌曲</a>
+                </div>
+                <div>
+                    <input type="file" id="external" for="external">
+                    <label for="external" class="btn fw-bolder"><img src="images/04_function_external.svg"> 加入外部歌曲</label>
+                </div>
+                <button type="button" class="btn fw-bolder" data-bs-toggle="modal" data-bs-target="#function_list"><img src="images/04_function_list.svg"> 新增清單</button>
+                <button type="button" class="btn fw-bolder" data-bs-toggle="modal" data-bs-target="#function_delete"><img src="images/04_function_delete.svg"> 刪除</button>
+                <button type="button" class="btn fw-bolder" data-bs-toggle="modal" data-bs-target="#function_rename"><img src="images/04_function_rename.svg"> 重新命名</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer bg-orange d-flex justify-content-between align-items-center px-5 text-white">
+        <div class="footer_list">
+            <p>播放曲目</p>
+            <h4>001 - JazzJazzJazzJazzJazzJazzJazzJazzJazzJazzJazz</h4>
+            <p class="mt-3">播放清單</p>
+            <h4>Jazz</h4>
+        </div>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <div class="position-relative d-flex justify-content-center">
+                <div class="position-absolute prev">上一首</div>
+                <div class="position-absolute next">下一首</div>
+                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                    <button type="button" class="btn prev"></button>
+                    <button type="button" class="btn play mx-3"></button>
+                    <button type="button" class="btn next"></button>
+                </div>
+            </div>
+            <div class="d-flex align-items-center mt-2">
+                <span>0:50</span>
+                <div class="position-relative mx-2 musicline">
+                    <img src="images/05_play_dot1.png" class="position-absolute dot1">
+                </div>
+                <span>3:51</span>
+            </div>
+        </div>
+        <div>
+            <div class="d-flex align-items-center mb-2">
+                <img class="speak" src="images/05_play_speaker1.svg">
+                <div class="position-relative ms-1 vol-line"><img src="images/05_play_dot2.svg" class="position-absolute dot2"></div>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off" checked>
+                <label class="btn single" for="btnradio1"></label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+                <label class="btn cycle" for="btnradio2"></label>
+
+                <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+                <label class="btn rangdom" for="btnradio3"></label>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="login" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center p-5">
+                    <img src="images/login-logo.png">
+                    <h5 class="fw-bolder my-4" style="color: #f96c51;">管理者登入</h4>
+                        <input type="text" class="mb-2 form-control" placeholder="帳號">
+                        <input type="password" class="form-control" placeholder="密碼">
+                        <input type="submit" class="btn bg-orange text-white mt-3" value="登入">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="function_list" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-5">
+                    <h4 class="fw-bolder">輸入清單名稱</h4>
+                    <input type="text" class="my-3 form-control">
+                    <input type="submit" class="btn bg-orange text-white me-4" value="確定">
+                    <button type="button" class="btn bg-orange text-white" data-bs-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="function_delete" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-5">
+                    <h4 class="fw-bolder mb-3">是否刪除該曲目/清單？</h4>
+                    <input type="submit" class="btn bg-orange text-white me-4" value="確定">
+                    <button type="button" class="btn bg-orange text-white" data-bs-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="function_rename" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center p-5">
+                    <h4 class="fw-bolder">輸入清單/曲目名稱</h4>
+                    <input type="text" class="my-3 form-control">
+                    <input type="submit" class="btn bg-orange text-white me-4" value="確定">
+                    <button type="button" class="btn bg-orange text-white" data-bs-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("button.play").click(function() {
+                $(this).toggleClass("stop");
+            });
+        });
+    </script>
+</body>
+
+</html>
+
